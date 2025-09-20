@@ -1,0 +1,47 @@
+.achievements-section {
+  padding: 50px 0;
+  background: white;
+}
+
+.achievements-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: black;
+}
+
+.achievements-section .intro-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: black;
+}
+
+/* Category Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.achievement-category {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.achievement-category h3 {
+  margin-bottom: 15px;
+  color: blue;
+}
+
+.achievement-category ul {
+  margin-left: 20px;
+  color: black;
+}
+
+.achievement-category ul li {
+  margin-bottom: 10px;
+}

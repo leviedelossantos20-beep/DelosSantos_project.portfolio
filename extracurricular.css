@@ -1,0 +1,46 @@
+.extracurriculars-section {
+  padding: 50px 0;
+  background: white;
+}
+
+.extracurriculars-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: black;
+}
+
+.extracurriculars-section .intro-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: black;
+}
+
+.extracurriculars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.extra-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.extra-card h3 {
+  margin-bottom: 15px;
+  color: blue;
+}
+
+.extra-card ul {
+  margin-left: 20px;
+  color: black;
+}
+
+.extra-card ul li {
+  margin-bottom: 10px;
+}
