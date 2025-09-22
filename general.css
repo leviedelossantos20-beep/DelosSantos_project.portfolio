@@ -24,7 +24,6 @@ body {
   cursor: pointer;
   user-select: none;
   color: white;
-  display: block;
 }
 
 .logo {
