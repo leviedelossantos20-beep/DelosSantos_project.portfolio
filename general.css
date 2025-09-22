@@ -131,7 +131,7 @@ body {
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
-  }
+  }x
   .hamburger {
     display: block;          
   }
