@@ -5,16 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!hamburger || !navList) return; 
 
   hamburger.addEventListener('click', function (e) {
-    e.stopPropagation(); 
-    const isOpen = this.classList.toggle('is-open');
-    navList.classList.toggle('active', isOpen);
-    this.setAttribute('aria-expanded', String(isOpen));
+    e.stopPropagation();
+    this.classList.toggle('is-open');
+    navList.classList.toggle('active');
+    this.setAttribute('aria-expanded', this.classList.contains('is-open'));
   });
 
   document.addEventListener('click', function (e) {
     if (
-      navList.classList.contains('active') && 
-      !e.target.closest('.main-nav') && 
+      navList.classList.contains('active') &&
+      !e.target.closest('.main-nav') &&
       !e.target.closest('.hamburger')
     ) {
       navList.classList.remove('active');
