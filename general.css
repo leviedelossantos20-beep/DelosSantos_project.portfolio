@@ -89,10 +89,6 @@ body {
   color: red;
 }
 
-.main-nav ul.active {
-    display: flex;
-}
-
 .contact-footer {
   background: black;
   color: white;
