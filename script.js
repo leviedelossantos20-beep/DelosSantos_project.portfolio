@@ -4,17 +4,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!hamburger || !navList) return; 
 
-  hamburger.addEventListener('click', function () {
+  hamburger.addEventListener('click', function (e) {
+    e.stopPropagation(); 
     const isOpen = this.classList.toggle('is-open');
     navList.classList.toggle('active');
     this.setAttribute('aria-expanded', String(isOpen));
   });
 
   document.addEventListener('click', function (e) {
-    const target = e.target;
-    const clickedInsideNav = target.closest('.main-nav') || target.closest('.hamburger');
-
-    if (!clickedInsideNav && navList.classList.contains('active')) {
+    if (!e.target.closest('.main-nav') && !e.target.closest('.hamburger')) {
       navList.classList.remove('active');
       hamburger.classList.remove('is-open');
       hamburger.setAttribute('aria-expanded', 'false');
