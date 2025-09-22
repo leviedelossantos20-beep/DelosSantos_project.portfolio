@@ -14,7 +14,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #00c2ff, #0073e6);
+  background: linear-gradient(135deg, lightgray, darkgray);
   color: white;
   padding: 60px 0;
   text-align: center;
@@ -35,14 +35,14 @@ body {
 }
 
 .hero h2 span {
-  color: darkblue;
+  color:beige;
 }
 
 .hero .btn {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background: darkblue;
+  background: goldenrod;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -51,7 +51,7 @@ body {
 }
 
 .hero .btn:hover {
-  background: rgb(0, 0, 105);
+  background: gold;
 }
 
 .overview {

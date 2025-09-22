@@ -42,10 +42,12 @@ body {
 }
 
 .main-nav ul {
-  list-style: none;
+  display: flex;           
   margin: 0;
   padding: 0;
-  display: flex;
+  list-style: none;
+  flex-direction: row;
+  position:static
 }
 
 .main-nav ul li {
@@ -131,7 +133,13 @@ body {
     grid-template-columns: 1fr;
   }
   .main-nav ul {
-    display: none;
+    @media (max-width: 768px) {
+  .hamburger {
+    display: block;          
+  }
+}
+  .main-nav ul {
+    display: none;         
     flex-direction: column;
     background: black;
     position: absolute;
@@ -141,4 +149,5 @@ body {
     padding: 15px;
     border-radius: 6px;
   }
+}
 }
