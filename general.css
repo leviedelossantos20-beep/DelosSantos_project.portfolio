@@ -145,5 +145,6 @@ body {
     width: 200px;
     padding: 15px;
     border-radius: 6px;
+    z-index: 1000;
   }
 }
