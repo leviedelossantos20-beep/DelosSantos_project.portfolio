@@ -7,12 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
   hamburger.addEventListener('click', function (e) {
     e.stopPropagation(); 
     const isOpen = this.classList.toggle('is-open');
-    navList.classList.toggle('active');
+    navList.classList.toggle('active', isOpen);
     this.setAttribute('aria-expanded', String(isOpen));
   });
 
   document.addEventListener('click', function (e) {
-    if (!e.target.closest('.main-nav') && !e.target.closest('.hamburger')) {
+    if (
+      navList.classList.contains('active') && 
+      !e.target.closest('.main-nav') && 
+      !e.target.closest('.hamburger')
+    ) {
+      navList.classList.remove('active');
+      hamburger.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  navList.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
       navList.classList.remove('active');
       hamburger.classList.remove('is-open');
       hamburger.setAttribute('aria-expanded', 'false');
