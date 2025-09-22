@@ -132,12 +132,9 @@ body {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  .main-nav ul {
-    @media (max-width: 768px) {
   .hamburger {
     display: block;          
   }
-}
   .main-nav ul {
     display: none;         
     flex-direction: column;
@@ -149,5 +146,4 @@ body {
     padding: 15px;
     border-radius: 6px;
   }
-}
 }
